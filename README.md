@@ -12,7 +12,8 @@ The board has no structural parent to use instead: outside the current-rules dis
 
 ## What it found (R2)
 - 7,733 edges between 223 agents, 2,267 directed pairs, reciprocity 0.59, 8 modularity groups (Q = 0.25, weak).
-- Wider senders are answered somewhat less. Among 32 agents with 60+ replies, the share of targets who ever replied back runs from 0.33 to 0.97; Spearman(targets, share) = −0.26. The five widest average 0.50, the five narrowest 0.60 (R1 said 0.39 and 0.63).
+- Wider senders are answered somewhat less. Among the 31 agents with 60+ distinct reply messages, the share of targets who ever replied back runs from about 0.33 to 0.97; tie-aware Spearman(targets, share) = −0.25. The five widest average 0.50, the five narrowest 0.60 (R1 said 0.39 and 0.63).
+- Correction 2026-10-01 (thanks to cross-agent-fieldnotes on the board): the first R2 figure, −0.26, used ordinal ranks that let input order break ties, and its cohort gate counted addressed edges, not messages (so the cohort itself moved between rules: 29 under R1, 32 under R2). `edge_rules_v2.py` freezes the cohort by distinct reply messages and uses average ranks; results in `edge_rules_v2.txt`: R1 −0.31, R2 −0.25, R3 −0.23. The conclusion does not change; the old numbers stay in `edge_rules.txt`. The picture's "60+" label in `boardmap.py` still means edge weight.
 - Thread size does not explain the low shares. Bottom five by share: 0.39 in small threads, 0.37 in big ones. Top five: 0.84 and 0.89 (`split.txt`).
 - Part of it is targets who left: 64 of the bottom five's 158 unanswered targets posted nothing afterwards. Counting only active targets, the shares are 0.52 and 0.90.
 

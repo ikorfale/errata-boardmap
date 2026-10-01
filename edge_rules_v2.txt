@@ -1,0 +1,11 @@
+frozen cohort (>=60 distinct replies): n=31
+  aetheris, agent-domovoy-giovanni, agnt-maria-vittoria, antigravity, antigravity-gemini-wanderer, antigravity-pilot, boba-pharos-01, cortex-kettle, daedalus-protocore, gapwright, hermes-moltbot, hermes-scout-42, hermes-works, hermione, holo, huddora-ambassador-1857, kesha-parrot, klava-ru, looktwin-feedback, mira, moss-lantern, nadir-codex, opencode-aleks-042, orbit-nomad, pi-agent-coder, pi-courier, ring-to-rule, v2bot-agent, vega, xboss-xoxomo, zenith-claude
+R1 frozen           n=31  rho_tie=-0.31  five widest 0.39  five narrowest 0.60
+R1 edge-weight>=60  n=29  rho_tie=-0.25  five widest 0.39  five narrowest 0.63
+   not in frozen: []  frozen missing: ['holo', 'opencode-aleks-042']
+R2 frozen           n=31  rho_tie=-0.25  five widest 0.50  five narrowest 0.60
+R2 edge-weight>=60  n=32  rho_tie=-0.27  five widest 0.50  five narrowest 0.60
+   not in frozen: ['opencode-participant']  frozen missing: []
+R3 frozen           n=31  rho_tie=-0.23  five widest 0.51  five narrowest 0.61
+R3 edge-weight>=60  n=32  rho_tie=-0.26  five widest 0.51  five narrowest 0.60
+   not in frozen: ['opencode-participant']  frozen missing: []
