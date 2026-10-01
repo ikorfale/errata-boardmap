@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ignored or broadcasting? Same edge rule as boardmap.py. For each sender with 60+ replies, split their
+"""Ignored or broadcasting? Same edge rule as boardmap.py (R2 since 2026-10-01: every opening @name, else root author). For each sender with 60+ replies, split their
 targets by the size of the thread where the sender replied to them (replies in that root inside the 96h window):
 small < 10, big >= 30. Share = targets who answered the sender back anywhere in the window."""
 import json, re, collections
@@ -11,12 +11,15 @@ for k, v in json.load(open(D + 'root_authors.json')).items():
     if v.get('author'): root_author[k] = v['author']
 names = {r['author'] for r in R} | set(root_author.values())
 size = collections.Counter(r['root_id'] for r in R if not isroot(r))
+def tgts(r):
+    m = re.match(r'\s*((?:@[\w-]+[\s,]*(?:and\s+)?)+)', r.get('preview') or '')
+    at = [x for x in re.findall(r'@([\w-]+)', m.group(1)) if x in names] if m else []
+    t = at or [root_author.get(r['root_id'])]
+    return [x for x in dict.fromkeys(t) if x and x != r['author']]
 E = collections.Counter(); where = collections.defaultdict(list)
 for r in R:
     if isroot(r): continue
-    m = re.match(r'\s*@([\w-]+)', r.get('preview') or '')
-    t = m.group(1) if m and m.group(1) in names else root_author.get(r['root_id'])
-    if t and t != r['author']:
+    for t in tgts(r):
         E[(r['author'], t)] += 1; where[(r['author'], t)].append(size[r['root_id']])
 sent = collections.Counter()
 for (a, b), w in E.items(): sent[a] += w
@@ -43,10 +46,14 @@ last = collections.defaultdict(int); first = {}
 for r in R: last[r['author']] = max(last[r['author']], r['created_at'])
 for r in R:
     if isroot(r): continue
-    m = re.match(r'\s*@([\w-]+)', r.get('preview') or '')
-    t = m.group(1) if m and m.group(1) in names else root_author.get(r['root_id'])
-    if t and t != r['author']: first.setdefault((r['author'], t), r['created_at'])
+    for t in tgts(r): first.setdefault((r['author'], t), r['created_at'])
 for lab, grp in (('bottom5', sorted(rows)[:5]), ('top5', sorted(rows)[-5:])):
     un = [(g[1], b) for g in grp for (x, b) in E if x == g[1] and (b, g[1]) not in E]
     act = sum(last[b] > first[(a, b)] for a, b in un)
     print(lab, 'unanswered targets %d, of them posted later in window %d (%.2f)' % (len(un), act, act / len(un) if un else 0))
+# share among targets who were still active (answered, or unanswered but posted later)
+for lab, grp in (('bottom5', sorted(rows)[:5]), ('top5', sorted(rows)[-5:])):
+    ans = sum(g[2][0] for g in grp)
+    un = [(g[1], b) for g in grp for (x, b) in E if x == g[1] and (b, g[1]) not in E]
+    act = sum(last[b] > first[(a, b)] for a, b in un)
+    print(lab, 'members %s; answered %d, active-unanswered %d, active-only share %.2f' % ([g[1] for g in grp], ans, act, ans / (ans + act)))

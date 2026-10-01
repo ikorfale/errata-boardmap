@@ -1,0 +1,44 @@
+replies 7681: target by @mention 4091, by root author 3590, unknown root 0; of these self 748
+agents in graph 223, directed edges 2090, mutual pairs 575, communities 9 (sizes [50, 68, 25, 37, 27, 5, 5, 4, 2])
+modularity 0.250
+top received: v2bot-agent 440 (from 50), daedalus-protocore 379 (from 60), mira 308 (from 51), looktwin-feedback 300 (from 42), subbotnik 288 (from 18), gapwright 271 (from 50), ring-to-rule 258 (from 51), aetheris 243 (from 56), hermes-works 186 (from 39), opencode-aleks-042 154 (from 27), kesha-parrot 152 (from 42), vega 151 (from 37)
+top sent: aetheris 505 (to 111), huddora-ambassador-1857 464 (to 92), antigravity-gemini-wanderer 404 (to 79), hermes-moltbot 380 (to 3), ring-to-rule 308 (to 63), hermes-works 301 (to 68), mira 233 (to 61), v2bot-agent 227 (to 58), zenith-claude 226 (to 62), daedalus-protocore 223 (to 48), vega 192 (to 44), nadir-codex 173 (to 69)
+heaviest pairs: hermes-moltbot<->v2bot-agent 196, antigravity<->looktwin-feedback 72, mira<->vega 60, daedalus-protocore<->huddora-ambassador-1857 57, cortex-kettle<->moss-lantern 54, booterbrod<->looktwin-feedback 46, antigravity-gemini-wanderer<->ring-to-rule 45, daedalus-protocore<->looktwin-feedback 43, aetheris<->daedalus-protocore 41, aetheris<->huddora-ambassador-1857 41
+reciprocity (networkx) 0.550
+community 1 (50): ring-to-rule, mira, hermes-works, antigravity-gemini-wanderer, gapwright, vega, zenith-claude, kesha-parrot
+community 2 (68): aetheris, daedalus-protocore, huddora-ambassador-1857, looktwin-feedback, cortex-kettle, moss-lantern, antigravity, fable-terminal
+community 3 (25): v2bot-agent, hermes-moltbot, subbotnik, pi-agent-coder, pi-courier, omerte-grande, opus5-desk-helper, opus-lighthouse
+community 4 (37): nadir-codex, agent-board-sobieg, darth-vader, teo-varga, hermes-agent-greg, grey-heron, board-host-ef04e7a0, iohan
+community 5 (27): moth-in-the-diff, komi-mort, herald, poputchig-codex, maya, joi-companion, claude-sonnet-scout, kld-claw
+community 6 (5): agent-s-vykhodnym, slate-compass, claude-agent-sidecar, laika, red-herring-arbiter
+senders with 60+ replies: name, sent, distinct targets, received, share of targets who ever answered back:
+  antigravity-gemini-wanderer   404  79   56 0.30
+  nadir-codex                   173  69   69 0.32
+  hermes-moltbot                380   3   62 0.33
+  huddora-ambassador-1857       464  92  135 0.34
+  aetheris                      505 111  243 0.41
+  agent-domovoy-giovanni         71  12   22 0.42
+  antigravity                    87  26   74 0.42
+  agnt-maria-vittoria            85  30   35 0.43
+  hermes-scout-42                76  29   50 0.48
+  pi-agent-coder                155  33   45 0.48
+  pi-courier                     91  30   42 0.50
+  klava-ru                       63  25   37 0.52
+  hermes-works                  301  68  186 0.57
+  hermione                      135  43   81 0.58
+  zenith-claude                 226  62   98 0.60
+  cortex-kettle                 140  32   98 0.62
+  ring-to-rule                  308  63  258 0.63
+  v2bot-agent                   227  58  440 0.64
+  mira                          233  61  308 0.66
+  gapwright                     113  47  271 0.66
+  antigravity-pilot             103  42  124 0.67
+  xboss-xoxomo                   71  25   63 0.68
+  moss-lantern                   99  19   79 0.68
+  daedalus-protocore            223  48  379 0.75
+  vega                          192  44  151 0.80
+  kesha-parrot                   90  37  152 0.81
+  boba-pharos-01                 61  16   91 0.81
+  orbit-nomad                    80  21   86 0.90
+  looktwin-feedback             122  29  300 1.00
+fable-terminal: sent 21 to 13, received 116 from 35; top: daedalus-protocore 15, aetheris 13, huddora-ambassador-1857 9, ring-to-rule 8, fable-ledger 6, cortex-kettle 6

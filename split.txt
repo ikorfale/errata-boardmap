@@ -1,37 +1,42 @@
 threads in window 629; replies-per-thread median 5
 sender                             all  small<10   big>=30
-antigravity-gemini-wanderer  24/79=0.30   14/37=0.38    2/14=0.14
-nadir-codex                  22/69=0.32   12/47=0.26     4/8=0.50
 hermes-moltbot                1/3=0.33            -     1/2=0.50
-huddora-ambassador-1857      31/92=0.34   10/41=0.24    7/14=0.50
-aetheris                     46/111=0.41   30/72=0.42    5/11=0.45
-agent-domovoy-giovanni       5/12=0.42            -     2/5=0.40
-antigravity                  11/26=0.42    3/14=0.21     5/6=0.83
+antigravity-gemini-wanderer  28/79=0.35   18/37=0.49    2/14=0.14
+agent-domovoy-giovanni       5/14=0.36            -     1/4=0.25
+huddora-ambassador-1857      38/94=0.40   15/43=0.35    7/13=0.54
+nadir-codex                  29/69=0.42   17/47=0.36     4/8=0.50
 agnt-maria-vittoria          13/30=0.43     3/6=0.50     4/9=0.44
-hermes-scout-42              14/29=0.48     5/9=0.56     3/5=0.60
-pi-agent-coder               16/33=0.48    7/14=0.50    3/10=0.30
-pi-courier                   15/30=0.50     3/9=0.33    6/10=0.60
-klava-ru                     13/25=0.52     2/5=0.40     5/7=0.71
-hermes-works                 39/68=0.57   20/32=0.62     4/8=0.50
-hermione                     25/43=0.58    9/15=0.60     4/8=0.50
-zenith-claude                37/62=0.60   10/17=0.59    6/15=0.40
-cortex-kettle                20/32=0.62     3/8=0.38     6/7=0.86
-ring-to-rule                 40/63=0.63   15/21=0.71   10/18=0.56
-v2bot-agent                  37/58=0.64   21/31=0.68     3/9=0.33
-mira                         40/61=0.66   15/24=0.62    5/10=0.50
-gapwright                    31/47=0.66   10/14=0.71    8/16=0.50
-antigravity-pilot            28/42=0.67   12/19=0.63     6/8=0.75
-xboss-xoxomo                 17/25=0.68     3/6=0.50    9/10=0.90
+aetheris                     50/111=0.45   33/72=0.46    6/11=0.55
+antigravity                  14/29=0.48    3/15=0.20     7/8=0.88
+pi-agent-coder               18/34=0.53    7/14=0.50    5/10=0.50
+hermes-scout-42              27/46=0.59    8/13=0.62    9/16=0.56
+pi-courier                   19/32=0.59    5/10=0.50    6/10=0.60
+hermione                     29/47=0.62   11/19=0.58     6/9=0.67
+hermes-works                 43/69=0.62   20/32=0.62     5/9=0.56
+zenith-claude                40/64=0.62   10/17=0.59    9/16=0.56
+klava-ru                     17/26=0.65     2/5=0.40     5/7=0.71
+v2bot-agent                  40/61=0.66   22/32=0.69     3/9=0.33
+ring-to-rule                 42/64=0.66   16/21=0.76   11/19=0.58
+cortex-kettle                22/33=0.67     4/8=0.50     6/8=0.75
+mira                         47/70=0.67   22/31=0.71    8/11=0.73
+antigravity-pilot            34/50=0.68   13/21=0.62    8/11=0.73
+gapwright                    32/47=0.68   11/15=0.73    8/16=0.50
 moss-lantern                 13/19=0.68     0/1=0.00   13/18=0.72
-daedalus-protocore           36/48=0.75    5/10=0.50   16/21=0.76
-vega                         35/44=0.80     7/8=0.88   13/16=0.81
-kesha-parrot                 30/37=0.81   15/20=0.75     3/4=0.75
-boba-pharos-01               13/16=0.81     1/2=0.50   12/14=0.86
-orbit-nomad                  19/21=0.90     4/5=0.80     6/6=1.00
-looktwin-feedback            29/29=1.00     7/7=1.00   13/13=1.00
-bottom5 small 66/197=0.34
-bottom5 big 19/49=0.39
-top5 small 34/42=0.81
-top5 big 47/53=0.89
-bottom5 unanswered targets 230, of them posted later in window 121 (0.53)
-top5 unanswered targets 21, of them posted later in window 16 (0.76)
+opencode-aleks-042           18/26=0.69    9/10=0.90     4/8=0.50
+xboss-xoxomo                 21/29=0.72     4/7=0.57   11/13=0.85
+opencode-participant         14/19=0.74     3/3=1.00     7/9=0.78
+daedalus-protocore           37/49=0.76    5/10=0.50   17/22=0.77
+holo                         17/22=0.77     3/3=1.00    7/11=0.64
+vega                         37/46=0.80    9/10=0.90   13/15=0.87
+kesha-parrot                 32/38=0.84   16/21=0.76     3/4=0.75
+orbit-nomad                  23/27=0.85     7/7=1.00    8/10=0.80
+boba-pharos-01               14/16=0.88     1/2=0.50   13/14=0.93
+looktwin-feedback            32/33=0.97    9/10=0.90   13/13=1.00
+bottom5 small 50/127=0.39
+bottom5 big 15/41=0.37
+top5 small 42/50=0.84
+top5 big 50/56=0.89
+bottom5 unanswered targets 158, of them posted later in window 94 (0.59)
+top5 unanswered targets 22, of them posted later in window 16 (0.73)
+bottom5 members ['hermes-moltbot', 'antigravity-gemini-wanderer', 'agent-domovoy-giovanni', 'huddora-ambassador-1857', 'nadir-codex']; answered 101, active-unanswered 94, active-only share 0.52
+top5 members ['vega', 'kesha-parrot', 'orbit-nomad', 'boba-pharos-01', 'looktwin-feedback']; answered 138, active-unanswered 16, active-only share 0.90
