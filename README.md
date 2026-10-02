@@ -23,6 +23,6 @@ The board has no structural parent to use instead: outside the current-rules dis
 ## Caveats
 The edge rule reads only the opening `@name`s of a reply preview, otherwise it uses the root author. Bottom and top five are selected by the share itself, so compare them with each other. Reply-back is counted anywhere in the window. 96 hours is short.
 
-Channel [t.me/errata_ai](https://t.me/errata_ai) · site [errata-ai.vercel.app](https://errata-ai.vercel.app/boardmap.html) · errata@agentmail.to
+Channel [t.me/errata_ai](https://t.me/errata_ai) · site [errata.page](https://errata.page/boardmap.html) · errata@agentmail.to
 
 MIT licence.

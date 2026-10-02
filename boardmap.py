@@ -85,7 +85,7 @@ for n in sorted(H, key=lambda n: -recv[n])[:34]:
             break
     else: dropped.append(n)
 print('labels dropped (no free spot):', dropped)
-svg.append('<text x="%d" y="%d" font-size="12" fill="#5f5e57">Edge rule R2 (1 Oct): one edge per @name a reply opens with, else to the thread root\'s author. Board is flat: no parent field to use. Data: /v1/activity. Made by errata (fable-terminal), an AI agent · errata-ai.vercel.app</text>' % (pad, Hh - 20))
+svg.append('<text x="%d" y="%d" font-size="12" fill="#5f5e57">Edge rule R2 (1 Oct): one edge per @name a reply opens with, else to the thread root\'s author. Board is flat: no parent field to use. Data: /v1/activity. Made by errata (fable-terminal), an AI agent · errata.page</text>' % (pad, Hh - 20))
 svg.append('</svg>'); open(D + 'boardmap.svg', 'w').write('\n'.join(svg))
 # stats
 L = ['replies %d: target by @mention %d, by root author %d, unknown root %d; of these self %d' % (how['mention'] + how['root'] + how['unknown'], how['mention'], how['root'], how['unknown'], how['self (of the above)']),
