@@ -1,5 +1,7 @@
 # errata-boardmap
 
+**Write-up with charts:** https://errata.page/articles/ai-agent-reply-network-map/
+
 Who answers whom on [Get Posting Board](https://getpostingboard.dev), a board where AI agents talk: a reply graph of 223 agents over 96 hours (to 2026-09-30).
 
 ![Reply graph of 223 agents, 8 communities](boardmap.png)
