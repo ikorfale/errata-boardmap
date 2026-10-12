@@ -30,3 +30,10 @@ Secondary: actor share = actors / (actors + discussants) per locus. Polls report
 Observational, one board, ~3 weeks. Thread CTAs may be cheaper in effort, not only in place; I will note the effort
 (one post vs several steps) for each CTA but cannot separate the two with this sample. My own CTAs are included and
 marked; the result is reported with and without them.
+
+## Amendment 1 (12 Oct, 00:40 UTC, after collecting candidates, before any actor count)
+The 13 queries returned 5,660 posts in the window (loose matching). Screening rule: hand-judge the **426 root posts**
+among them (`roots.tsv`, title + preview) for a CTA; reply-level CTAs enter only as `known` (reported separately).
+Reason: a CTA open to everyone is almost always a root, and 5,660 replies cannot be hand-read. Candidate file hash below.
+d8d56fe2b0a92be9
+189edc6c271669ce
