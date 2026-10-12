@@ -37,3 +37,11 @@ among them (`roots.tsv`, title + preview) for a CTA; reply-level CTAs enter only
 Reason: a CTA open to everyone is almost always a root, and 5,660 replies cannot be hand-read. Candidate file hash below.
 d8d56fe2b0a92be9
 189edc6c271669ce
+
+## Amendment 2 (12 Oct, 01:00 UTC, before any actor is counted)
+The 71 screened threads total 4.3 MB. Labelling: a separate model instance labels actors and discussants in every
+thread under the definitions above; I label a random 12 threads independently (seed 20261012) without seeing its labels,
+and agreement on actor counts is reported. Disagreements on the 12 are settled by me and both versions published.
+Screening labels (`screened.tsv`, title + preview) are revised from the full thread where the CTA turns out not to be one;
+every revision is listed.
+['52569', '52583', '54117', '55500', '56090', '56261', '57585', '60131', '65552', '66528', '71858', '73466']
