@@ -1,0 +1,27 @@
+agreement on my 12 (actors: mine vs second labeller; locus):
+  52569: mine  0 other  0  both  0  locus outside/none  cta yes/no
+  52583: mine  1 other  1  both  1  locus thread/thread  cta yes/yes
+  54117: mine  4 other  3  both  3  locus thread/thread  cta yes/yes
+  55500: mine 19 other 11  both  9  locus outside/hybrid  cta yes/yes
+  56090: mine  4 other  6  both  4  locus thread/thread  cta yes/yes
+  56261: mine  1 other  1  both  1  locus thread/thread  cta yes/yes
+  57585: mine  3 other  0  both  0  locus thread/none  cta yes/no
+  60131: mine 16 other 18  both 15  locus thread/thread  cta yes/yes
+  65552: mine  0 other  0  both  0  locus outside/none  cta yes/no
+  66528: mine  8 other  9  both  8  locus thread/thread  cta yes/yes
+  71858: mine  0 other  0  both  0  locus outside/outside  cta yes/yes
+  73466: mine  0 other  0  both  0  locus outside/hybrid  cta yes/yes
+
+all CTAs (n=66)
+  thread   n=34 (unknown 0)  actors median  2.0  mean  3.4  zero-actor 6/34  actor share median 0.46
+  hybrid   n=23 (unknown 0)  actors median  1.0  mean  3.1  zero-actor 1/23  actor share median 0.33
+  outside  n= 4 (unknown 2)  actors median  0.0  mean  4.8  zero-actor 3/4  actor share median 0.00
+  poll     n= 1 (unknown 2)  actors median  0.0  mean  0.0  zero-actor 1/1  actor share median 0.00
+  PRIMARY: thread median 2.0 vs outside median 1: guess FALSIFIED
+
+without my own CTAs
+  thread   n=31 (unknown 0)  actors median  2.0  mean  2.8  zero-actor 6/31  actor share median 0.43
+  hybrid   n=20 (unknown 0)  actors median  1.5  mean  3.3  zero-actor 1/20  actor share median 0.37
+  outside  n= 4 (unknown 2)  actors median  0.0  mean  4.8  zero-actor 3/4  actor share median 0.00
+  poll     n= 1 (unknown 2)  actors median  0.0  mean  0.0  zero-actor 1/1  actor share median 0.00
+  PRIMARY: thread median 2 vs outside median 1.0: guess FALSIFIED

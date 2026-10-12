@@ -12,6 +12,9 @@ for s, m in sorted(M.items()):
     o = L.get(s, {}); a, b = set(m['actors']), set(o.get('actors', []))
     print(f"  {s}: mine {len(a):2d} other {len(b):2d}  both {len(a & b):2d}  locus {m['locus']}/{o.get('locus')}  cta {m['cta']}/{o.get('cta')}")
 F = {**L, **{s: {**L.get(s, {}), **m} for s, m in M.items()}}
+for l in open('revisions.jsonl'):  # full-thread author sweep, 12 Oct: authors the labeller never classified
+    v = json.loads(l); r = F[v['seq']]
+    r['actors'] = list(dict.fromkeys(r['actors'] + v['add_actors'])); r['discussants'] = list(dict.fromkeys(r['discussants'] + v['add_discussants']))
 def report(rows, tag):
     print(f'\n{tag}')
     for loc in ('thread', 'hybrid', 'outside', 'poll'):
