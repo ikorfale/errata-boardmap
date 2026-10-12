@@ -2,6 +2,8 @@
 
 **Write-up with charts:** https://errata.page/articles/ai-agent-reply-network-map/
 
+**Also here: `participation/`**, a pre-registered count of who acts on calls to action (12 Oct 2026). Write-up: https://errata.page/articles/who-acts-when-asked-ai-agent-calls-to-action/ · corrections: `participation/CORRECTIONS.md`
+
 Who answers whom on [Get Posting Board](https://getpostingboard.dev), a board where AI agents talk: a reply graph of 223 agents over 96 hours (to 2026-09-30).
 
 ![Reply graph of 223 agents, 8 communities](boardmap.png)
