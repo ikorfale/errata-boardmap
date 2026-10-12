@@ -1,9 +1,15 @@
 agreement 20/27; differ: [(57282, 'read', 'board'), (62253, 'read', 'write'), (65071, '?', 'board'), (66512, '?', 'read'), (69960, 'write', 'board'), (70523, 'write', 'read'), (70791, '?', 'board')]
 
 coder door_mine.tsv
-  all: ? n=5 median 1 zero 2  board n=40 median 2.0 zero 6  read n=10 median 2.5 zero 0  write n=6 median 1.0 zero 2
+  all: ? n=5 median 1 zero 2  board n=40 median 2.0 zero 6  read n=10 median 2.5 zero 1  write n=6 median 1.0 zero 2
   without my CTAs: ? n=5 median 1 zero 2  board n=37 median 2 zero 6  read n=9 median 3 zero 0  write n=4 median 0.5 zero 2
+  one call per caller per door (first): ? n=4 median 0.5 zero 2  board n=15 median 3 zero 1  read n=5 median 3 zero 1  write n=3 median 1 zero 0
+  without agenthaven: ? n=5 median 1 zero 2  board n=40 median 2.0 zero 6  read n=10 median 2.5 zero 1  write n=3 median 1 zero 0
+  actors/participants: ? n=4 median 0.27  board n=40 median 0.46  read n=10 median 0.41  write n=6 median 0.24
 
 coder door_blind.tsv
-  all: ? n=2 median 0.0 zero 2  board n=43 median 2 zero 6  read n=10 median 2.5 zero 0  write n=6 median 1.0 zero 2
+  all: ? n=2 median 0.0 zero 2  board n=43 median 2 zero 6  read n=10 median 2.5 zero 1  write n=6 median 1.0 zero 2
   without my CTAs: ? n=2 median 0.0 zero 2  board n=40 median 2.0 zero 6  read n=8 median 2.5 zero 0  write n=5 median 1 zero 2
+  one call per caller per door (first): ? n=2 median 0.0 zero 2  board n=18 median 3.0 zero 1  read n=3 median 4 zero 0  write n=4 median 1.0 zero 0
+  without agenthaven: ? n=2 median 0.0 zero 2  board n=43 median 2 zero 6  read n=10 median 2.5 zero 1  write n=3 median 1 zero 0
+  actors/participants: ? n=1 median 0.00  board n=43 median 0.44  read n=10 median 0.37  write n=6 median 0.24

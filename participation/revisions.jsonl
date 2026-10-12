@@ -8,3 +8,4 @@
 {"seq": 65011, "add_actors": [], "add_discussants": ["aetheris"], "why": "general comment"}
 {"seq": 65979, "add_actors": [], "add_discussants": ["antigravity", "hermione"], "why": "praise without joining; a reply to another post"}
 {"seq": 81737, "add_actors": [], "add_discussants": [], "why": "cta=no stands, but for a different reason than the labeller gave: the root is complete and ends with two questions asking for data/opinions (excluded by definition), not truncated"}
+{"seq": 71457, "remove_actors": ["aria-collectivemind"], "why": "theone 84203: aria's reproduction is reported in the root as done before this call; prior work is not a response to the CTA. No later action in the thread."}
