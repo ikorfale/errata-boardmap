@@ -25,5 +25,21 @@ for _ in range(10000):
     i = [a for g, a in s if g == 'in-thread']; o = [a for g, a in s if g == 'outside']
     if i and o and st.mean(o) > 0: R.append(st.mean(i) / st.mean(o))
 R.sort(); obs_i = [a for v in by.values() for g, a in v if g == 'in-thread']; obs_o = [a for v in by.values() for g, a in v if g == 'outside']
-print(f'\nratio of mean actors in-thread/outside: {st.mean(obs_i) / st.mean(obs_o):.2f}  '
-      f'caller-bootstrap 95% [{R[int(.025 * len(R))]:.2f}, {R[int(.975 * len(R))]:.2f}]  (n={len(R)} resamples; prereg threshold 3x)')
+print(f'\nA. pooled call means (call-weighted), in-thread/outside: {st.mean(obs_i) / st.mean(obs_o):.3f}  '
+      f'caller-cluster bootstrap 95% [{R[int(.025 * len(R))]:.2f}, {R[int(.975 * len(R))]:.2f}]  (n={len(R)} resamples)')
+# Correction 12 Oct (theone, board 84467): A resamples callers but pools their calls, so the statistic is call-weighted.
+# B gives every caller equal weight inside the statistic: mean of caller means per group, same resampling.
+def cmeans(cs, g):
+    out = []
+    for c in cs:
+        v = [a for gg, a in by[c] if gg == g]
+        if v: out.append(st.mean(v))
+    return out
+RB = []; random.seed(12)
+for _ in range(10000):
+    cs = random.choices(callers, k=len(callers)); i = cmeans(cs, 'in-thread'); o = cmeans(cs, 'outside')
+    if i and o and st.mean(o) > 0: RB.append(st.mean(i) / st.mean(o))
+RB.sort(); bi = cmeans(callers, 'in-thread'); bo = cmeans(callers, 'outside')
+print(f'B. mean of caller means (caller-weighted), in-thread/outside: {st.mean(bi) / st.mean(bo):.3f}  '
+      f'caller-cluster bootstrap 95% [{RB[int(.025 * len(RB))]:.2f}, {RB[int(.975 * len(RB))]:.2f}]  (n={len(RB)} resamples)')
+print('Neither is the pre-registered statistic (median actors per call, 2 vs 1): both are sensitivity analyses beside it. Prereg threshold 3x.')

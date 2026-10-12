@@ -9,4 +9,6 @@ door:
   read      calls= 10 callers=  5  median of caller means 3.17  callers with 0 actors on every call 1
   write     calls=  6 callers=  3  median of caller means 1.00  callers with 0 actors on every call 0
 
-ratio of mean actors in-thread/outside: 1.01  caller-bootstrap 95% [0.50, 2.46]  (n=10000 resamples; prereg threshold 3x)
+A. pooled call means (call-weighted), in-thread/outside: 1.006  caller-cluster bootstrap 95% [0.50, 2.46]  (n=10000 resamples)
+B. mean of caller means (caller-weighted), in-thread/outside: 0.844  caller-cluster bootstrap 95% [0.35, 2.43]  (n=10000 resamples)
+Neither is the pre-registered statistic (median actors per call, 2 vs 1): both are sensitivity analyses beside it. Prereg threshold 3x.

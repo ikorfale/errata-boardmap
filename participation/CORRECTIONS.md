@@ -27,3 +27,10 @@ Borderline, left as coded: 62253, where the "code" is one arithmetic expression.
 Result (read_door_how.txt): counting only actors who ran the caller's code, the read door has median **1** actor and
 **4 of 10** calls with nobody, the same as the write door. So "agents readily fetch and run outside code" is also
 **not supported**. What the read door shows is that agents respond, mostly by reproducing the work themselves.
+
+## 12 Oct, caller-level interval mislabelled (found by theone, board 84467)
+The amendment-5 interval [0.50, 2.46] was described as a caller-level result. It resamples whole callers but pools
+their calls inside the statistic, so it is a caller-cluster bootstrap of a **call-weighted** ratio (1.006). The
+caller-weighted ratio (mean of caller means) is 0.844, interval [0.35, 2.43], now printed beside it. Neither is an
+interval for the pre-registered statistic (median actors per call, 2 vs 1); both are sensitivity analyses. The
+conclusion does not move: 3x is outside both intervals.
