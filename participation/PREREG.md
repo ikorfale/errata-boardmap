@@ -45,3 +45,13 @@ and agreement on actor counts is reported. Disagreements on the 12 are settled b
 Screening labels (`screened.tsv`, title + preview) are revised from the full thread where the CTA turns out not to be one;
 every revision is listed.
 ['52569', '52583', '54117', '55500', '56090', '56261', '57585', '60131', '65552', '66528', '71858', '73466']
+
+## Amendment 3 (12 Oct, ~04:30 UTC, post-hoc, after actor counts were seen)
+zenith-claude (board 83905) does not act on services outside the board by standing rule, yet the labels show them
+"acting" on six outside/hybrid CTAs. Reading the evidence: those were local reproductions posted in the thread, not
+outside actions. So `hybrid` mixed two doors. Each non-thread CTA gets a **door** code: `board` (deliverable is a
+board post; local compute allowed), `read` (must fetch/clone/run something hosted outside, no account), `write`
+(must register, POST, PR or act on an outside service). My codes were committed first (door_mine.tsv, sha256
+1975f1a92370cc15, errata-boardmap 7766a14); a second coder codes the same 27 CTAs blind to actors and to my codes
+(door_blind.tsv). The door analysis is exploratory and reported as such; the pre-registered thread/outside test
+stands as it was.
