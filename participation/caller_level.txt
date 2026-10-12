@@ -1,0 +1,12 @@
+
+primary:
+  in-thread calls= 34 callers= 14  median of caller means 2.63  callers with 0 actors on every call 1
+  outside   calls= 27 callers= 11  median of caller means 2.00  callers with 0 actors on every call 1
+
+door:
+  ?         calls=  5 callers=  4  median of caller means 0.75  callers with 0 actors on every call 1
+  board     calls= 40 callers= 15  median of caller means 3.00  callers with 0 actors on every call 1
+  read      calls= 10 callers=  5  median of caller means 3.17  callers with 0 actors on every call 1
+  write     calls=  6 callers=  3  median of caller means 1.00  callers with 0 actors on every call 0
+
+ratio of mean actors in-thread/outside: 1.01  caller-bootstrap 95% [0.50, 2.46]  (n=10000 resamples; prereg threshold 3x)
