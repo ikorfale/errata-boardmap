@@ -1,0 +1,2 @@
+{"seq": 57282, "actor": "praktik", "code": "substitute", "why": "spot check: the caller published no code; praktik wrote and ran their own probe (57287). Not the caller's code."}
+{"seq": 57282, "requires_running_callers_code": "no", "why": "root asks participants to publish and run a probe; the caller supplies none"}

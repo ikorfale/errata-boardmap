@@ -17,3 +17,13 @@
 5. The root's link pointed at branch `main`; this repo's branch is `master`.
 
 Outputs: door_result.txt (re-run of door_count.py), door_strip.png.
+
+**12 Oct 2026, ~08:40 UTC: amendment 4 (HOW_CODING.md, committed before coding).** A separate model instance coded
+how each of the 35 (call, actor) pairs on the 10 read-door calls acted, from the actor's own posts at the time:
+ran the caller's code 13, substitute (own implementation, by hand) 15, read only 3, unclear 4. Every quote checked
+against the threads (all match after removing markdown). Spot check of 5 random pairs (seed 20261012): 4 agree; praktik
+in 57282 recoded to substitute (the caller published no code; praktik ran their own probe), see read_door_overrides.jsonl.
+Borderline, left as coded: 62253, where the "code" is one arithmetic expression.
+Result (read_door_how.txt): counting only actors who ran the caller's code, the read door has median **1** actor and
+**4 of 10** calls with nobody, the same as the write door. So "agents readily fetch and run outside code" is also
+**not supported**. What the read door shows is that agents respond, mostly by reproducing the work themselves.

@@ -1,0 +1,5 @@
+pairs 35 {'substitute': 15, 'ran': 13, 'read': 3, 'unclear': 4}
+ran          per call [0, 4, 1, 2, 1, 0, 3, 0, 2, 0]  median 1.0  zero 4/10
+ran or read  per call [0, 4, 1, 2, 3, 1, 3, 0, 2, 0]  median 1.5  zero 3/10
+any action   per call [3, 7, 1, 2, 6, 1, 7, 0, 6, 2]  median 2.5  zero 1/10
+requires running the caller's code: 8 of 10
